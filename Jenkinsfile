@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                bat '"D:\\Games\\compressed\\apache-maven-3.9.12-bin\\apache-maven-3.9.12\\bin\\mvn" clean package'
             }
         }
 
