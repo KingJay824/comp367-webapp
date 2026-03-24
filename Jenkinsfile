@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/KingJay824/comp367-webapp.git'
-            }
-        }
-
         stage('Build Maven Project') {
             steps {
                 bat '"D:\\Games\\compressed\\apache-maven-3.9.12-bin\\apache-maven-3.9.12\\bin\\mvn" clean package'
